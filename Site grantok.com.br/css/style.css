@@ -65,3 +65,45 @@ body{
 .site{
   text-align: center;
 }
+
+/*Slider*/
+.example-desc {
+    margin:3px 0;
+    padding:5px;
+}
+
+#carousel {
+    width:1000px;    
+    height:450px;
+    position:relative;
+    clear:both;
+    overflow:hidden;
+    background:#FFF; 
+}
+
+#carousel img {
+  	width: 400px;
+    height: 400px;
+    visibility:hidden; 
+    cursor:pointer;
+}
+
+#callback-output {
+    height:250px;
+    overflow:scroll;
+}
+
+textarea#newoptions {
+    width:430px;
+}
+#prev img,#next img{
+	width: 180px;
+	height: 100px;
+	margin: 0 10px 0 10px;
+}
+
+#carousel img#item-1{
+	left: 100px;
+}
+	
+/*Fim Slider*/

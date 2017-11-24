@@ -4,6 +4,52 @@
 	<meta charset="UTF-8">
 	<title>Grantok Portas & Cabos</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+			<!--Slider-->
+			<!--https://bkosborne.com/jquery-waterwheel-carousel-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Slider Portas(Carousel)</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 4,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+		<!--Fim Slider-->
 </head>
 <body>
 	<div id="geral">
@@ -22,7 +68,25 @@
 			</div>
 			<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
 		</header>
-
+		<!--Slider-->		
+		<table>
+			<tr>
+		<td><a href="#" id="prev"><img src="img/prev.png"></a> 		    	
+    	<td><div id="carousel">
+      		<a href="#"><img src="img/angelim lisa.png" id="item-1" /></a>
+      		<a href="#"><img src="img/angelim frisada gr-19.png" id="item-2" /></a>
+		    <a href="#"><img src="img/hdf branca.png" id="item-3" /></a>
+		    <a href="#"><img src="img/hdf frisada gr-18.png" id="item-4" /></a>
+		    <a href="#"><img src="img/pintura.png" id="item-5" /></a>
+		    <a href="#"><img src="img/pivotante.png" id="item-6" /></a>	
+		    <a href="#"><img src="img/frisada.png" id="item-7"></a>
+		    <a href=""><img src="img/bbb.png" id="item-8"></a>
+		    <a href=""><img src="img/madeira mista.png" id="item-9"></a>	    
+    	</div>
+    	<td><a href="#" id="next"><img src="img/next.png"></a>
+    	</tr>
+    	</table>
+		<!--Fim Slider-->
 	</div>
 
 </body>
