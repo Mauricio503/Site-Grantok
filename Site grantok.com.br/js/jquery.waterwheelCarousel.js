@@ -165,7 +165,7 @@
           separation *= options.separationMultiplier;
         }
         data.calculations[i] = {
-          distance: data.calculations[i-1].distance + separation,
+          distance: data.calculations[i-1].distance + separation+60,//Ajustar distancia de uma imagem para a outra
           offset:   data.calculations[i-1].offset + horizonOffset,
           opacity:  data.calculations[i-1].opacity * options.opacityMultiplier
         }

@@ -73,7 +73,7 @@ body{
 }
 
 #carousel {
-    width:1000px;    
+    width:1150px;    
     height:450px;
     position:relative;
     clear:both;
@@ -97,13 +97,14 @@ textarea#newoptions {
     width:430px;
 }
 #prev img,#next img{
-	width: 180px;
-	height: 100px;
-	margin: 0 10px 0 10px;
+	width: 110px;
+	height: 80px;
+	margin: 0 0 0 10px;
 }
 
-#carousel img#item-1{
-	left: 100px;
+.example-desc {
+        margin:3px 0;
+        padding:5px;
 }
 	
 /*Fim Slider*/
