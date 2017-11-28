@@ -54,12 +54,15 @@ body{
 .menu li:nth-child(1n+4) a{
   text-align: right;
 }
+.menu li:nth-child(1){
+  margin-left: 45px;
+}
 .logo img{
   width: 180px;
   height: 100px;
   background-size: 100px 64px;
   position: absolute;
-  left: 600px;
+  left: 615px;
   margin-top: 24px;
 }
 .site{
@@ -73,7 +76,7 @@ body{
 }
 
 #carousel {
-    width:1150px;    
+    width:1180px;    
     height:450px;
     position:relative;
     clear:both;
@@ -99,7 +102,7 @@ textarea#newoptions {
 #prev img,#next img{
 	width: 110px;
 	height: 80px;
-	margin: 0 0 0 10px;
+	margin: 0 3px 0 3px;
 }
 
 .example-desc {
@@ -108,3 +111,30 @@ textarea#newoptions {
 }
 	
 /*Fim Slider*/
+
+/* Produtos pagina incial*/
+section{
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+}
+
+#imagem-principal{
+	width: 765px;
+	height: 800px;
+	overflow: hidden;
+}
+#titulo-produtos{
+	text-align: center;
+	font-size: 50px;
+}
+
+#img {
+	width: 163px; /*300*/
+	height: 100px;
+}
+button{
+	border: 0;
+	background: white;
+}
+/* Fim Produtos pagina incial*/
