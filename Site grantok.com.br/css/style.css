@@ -1,6 +1,9 @@
 *{
   margin: 0;
   padding: 0;
+  border:none; 
+  outline:none;
+  list-style-type:none;
 }
 
 body{
@@ -124,17 +127,39 @@ section{
 	height: 800px;
 	overflow: hidden;
 }
-#titulo-produtos{
+h1 {
 	text-align: center;
 	font-size: 50px;
+	text-decoration: underline;
+}
+
+h2{
+	text-align: center;
+	font-size: 30px;
 }
 
 #img {
-	width: 163px; /*300*/
+	width: 163px;
 	height: 100px;
+}
+#img2 {
+	width: 159px;
+	height: 100px;
+}
+#img3{
+	width: 163px;
+	height: 100px;
+	margin-left: 10px;
 }
 button{
 	border: 0;
 	background: white;
+}
+#imagem-principal-cabos {
+	width: 100%;
+	height: 400px;
+}
+#botoes-direita{
+	width: 159px;
 }
 /* Fim Produtos pagina incial*/
