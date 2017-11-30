@@ -1,165 +1,66 @@
-*{
-  margin: 0;
-  padding: 0;
-  border:none; 
-  outline:none;
-  list-style-type:none;
-}
-
-body{
-	margin: 0 auto;
-}
-#geral{
-	width: 100%;
-}
-
-#telefone{
-	margin: 15px;
-	float: right;
-}
-
-.menu{
-	background: #096735;		
-  	width: 100%;
-  	height: 66px;
-  	margin: 10px auto;
-  	float: left; 
-}
-.menu ul{
-  	list-style: none;
-  	text-align: center;
-}
-.menu li{
-  	float: left;
-  	text-align: center;
-  	margin-left: 10px;
-}
-.menu li a{
-	width: 180px;
-	height: 30px;
-  	display: block;
-  	padding: 10px 0;
-  	font-size: 20px;
-  	text-decoration: none;
-  	margin: 10px 10px 0 0;
-  	color: #ccc;
-	text-shadow: black 0px 2px, black 2px 0px, black -2px 0px, 
-    black 0px -2px, black -1.4px -1.4px, black 1.4px 1.4px, 
-    black 1.4px -1.4px, black -1.4px 1.4px;   
-}
-
-.menu li:nth-child(3){
-  margin-right: 120px;
-}
-.menu li:nth-child(6) a{
-  margin-right: 0;
-}
-.menu li:nth-child(1n+4) a{
-  text-align: right;
-}
-.menu li:nth-child(1){
-  margin-left: 45px;
-}
-.logo img{
-  width: 180px;
-  height: 100px;
-  background-size: 100px 64px;
-  position: absolute;
-  left: 615px;
-  margin-top: 24px;
-}
-.site{
-  text-align: center;
-}
-
-/*Slider*/
-.example-desc {
-    margin:3px 0;
-    padding:5px;
-}
-
-#carousel {
-    width:1180px;    
-    height:450px;
-    position:relative;
-    clear:both;
-    overflow:hidden;
-    background:#FFF; 
-}
-
-#carousel img {
-  	width: 400px;
-    height: 400px;
-    visibility:hidden; 
-    cursor:pointer;
-}
-
-#callback-output {
-    height:250px;
-    overflow:scroll;
-}
-
-textarea#newoptions {
-    width:430px;
-}
-#prev img,#next img{
-	width: 110px;
-	height: 80px;
-	margin: 0 3px 0 3px;
-}
-
-.example-desc {
-        margin:3px 0;
-        padding:5px;
-}
-	
-/*Fim Slider*/
-
+*{margin: 0;padding: 0;border:none; outline:none;list-style-type:none;}
+body{margin: 0 auto;}
+#geral{width: 100%;}
+#telefone{margin: 15px;float: right;}
+/*Menu*/
+.menu{background: #096735;width: 100%;height: 66px;margin: 10px auto;float: left;}
+.menu ul{list-style: none;text-align: center;}
+.menu li{float: left;text-align: center;margin-left: 10px;}
+.menu li a{width: 180px;height: 30px;display: block;padding: 10px 0;font-size: 20px;text-decoration: none;margin: 10px 10px 0 0;color: #ccc;
+text-shadow: black 0px 2px, black 2px 0px, black -2px 0px, 
+black 0px -2px, black -1.4px -1.4px, black 1.4px 1.4px, 
+black 1.4px -1.4px, black -1.4px 1.4px;}
+.menu li:nth-child(3){margin-right: 120px;}
+.menu li:nth-child(6) a{margin-right: 0;}
+.menu li:nth-child(1n+4) a{text-align: right;}
+.menu li:nth-child(1){margin-left: 45px;}
+.logo img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;left: 615px;margin-top: 26px;}
+.site{text-align: center;}
+/*Slide*/
+.example-desc {margin:3px 0;padding:5px;}
+#carousel {width:1180px;height:450px;position:relative;clear:both;overflow:hidden;background:#FFF;}
+#carousel img {width: 400px;height: 400px;visibility:hidden;cursor:pointer;}
+#callback-output {height:250px;overflow:scroll;}
+textarea#newoptions {width:430px;}
+#prev img,#next img{width: 110px;height: 80px;margin: 0 3px 0 3px;}
+.example-desc {margin:3px 0;padding:5px;}
 /* Produtos pagina incial*/
-section{
-	width: 100%;
-	height: 100%;
-	margin-top: 10px;
-}
-
-#imagem-principal{
-	width: 765px;
-	height: 800px;
-	overflow: hidden;
-}
-h1 {
+section{width: 100%;height: 100%;margin-top: 10px;}
+#imagem-principal{width: 765px;height: 800px;overflow: hidden;}
+#titulo-produtos{text-align: center;font-size: 50px;text-decoration: underline;}
+#subtitulo-produtos{text-align: center;font-size: 30px;}
+#img{width: 163px;height: 100px;}
+#img2{width: 159px;height: 100px;}
+#img3{width: 163px;height: 100px;margin-left: 10px;}
+button{border: 0;background: white;}
+#imagem-principal-cabos {width: 100%;height: 400px;}
+#botoes-direita{width: 159px;}
+/*Footer*/
+#footer{width: 100%;height: 280px;background: #096735;margin-top: 10px;}
+#contato{
+	width: 350px;
+	height: 260px;
 	text-align: center;
-	font-size: 50px;
-	text-decoration: underline;
+	color: white;
+	font-size: 25px;
+	margin-left: 150px;
+	float: left;
 }
-
-h2{
+#endereco{
+	width: 350px;
+	height: 260px;
 	text-align: center;
-	font-size: 30px;
+	color: white;
+	font-size: 25px;
+	margin-left: 300px;
+	float: left;
 }
-
-#img {
-	width: 163px;
-	height: 100px;
-}
-#img2 {
-	width: 159px;
-	height: 100px;
-}
-#img3{
-	width: 163px;
-	height: 100px;
-	margin-left: 10px;
-}
-button{
-	border: 0;
-	background: white;
-}
-#imagem-principal-cabos {
+#autoria{
 	width: 100%;
-	height: 400px;
+	height: 20px;
+	background: grey;
+	float: left;
 }
-#botoes-direita{
-	width: 159px;
-}
-/* Fim Produtos pagina incial*/
+#autoria b{float: right;}
+#autoria a{float: right;}
+/*Fim footer*/
