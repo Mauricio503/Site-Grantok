@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Grantok Portas & Cabos</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 			<!--Slider-->
 			<!--https://bkosborne.com/jquery-waterwheel-carousel-->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -13,7 +14,7 @@
     <script type="text/javascript">
       $(document).ready(function () {
         var carousel = $("#carousel").waterwheelCarousel({
-          flankingItems: 3,
+          flankingItems: 2,
           movingToCenter: function ($item) {
             $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
           },
@@ -57,21 +58,23 @@
 			<div id="telefone">
 				(49) 3434-0605 - 3434-0493
 			</div>
+			<!--Menu-->
 			<div class="menu">
 		    	<ul>
-				    <li><a href="#">Pagina Inicial</a></li>
-				    <li><a href="#">Produtos</a></li>
+				    <li><a href="index.html">Pagina Inicial</a></li>
+				    <li><a href="produtos.html">Produtos</a></li>
 				    <li><a href="#">Empresa</a></li>
 				    <li><a href="#">Localização</a></li>
 				    <li><a href="#">Representantes</a></li>
 		    	</ul>
 			</div>
-			<div class="logo"><img src="img/logo.jpg" alt="logo"></div>
+			<div class="logo" align="middle"><img src="img/logo.jpg" alt="logo"></div>
 		</header>
 		<!--Slider-->		
+		<div align="middle">
 		<table>
 			<tr>
-		<td><a href="#" id="prev"><img src="img/prev.png"></a> 		    	
+		<td><a href="#" id="prev"><img src="img/prev.png"></a>		    	
     	<td><div id="carousel">
       		<a href="#"><img src="img/angelim lisa.png" id="item-1" /></a>
       		<a href="#"><img src="img/angelim frisada gr-19.png" id="item-2" /></a>
@@ -83,9 +86,10 @@
 		    <a href="#"><img src="img/bbb.png" id="item-8"></a>
 		    <a href="#"><img src="img/externa mista.png" id="item-9"></a>	    
     	</div>
-    	<td><a href="#" id="next"><img src="img/next.png"></a>
+    	<td><a href="#" id="next"><img src="img/next.png"></a> 
     	</tr>
     	</table>
+    	</div>
 		<!--Fim Slider-->
 		<hr size="5" color=#096735>
 		<section> 
@@ -95,7 +99,7 @@
 			<table>
 				<tr>
 					<script type="text/javascript" src="js/troca-imagens.js"></script>
-					<td><a><img src="img/btn hdf branca.jpg" id="img"" onclick="mudaImagem(1)"  /></a>
+					<td id="botoes-esquerda"><a><img src="img/btn hdf branca.jpg" id="img"" onclick="mudaImagem(1)"  /></a>
 						<a><img src="img/btn hdf frisada.jpg" id="img" onclick="mudaImagem(2)"/></a>  
 						<a><img src="img/btn angelim.jpg" id="img" onclick="mudaImagem(3)"></a>
 						<a><img src="img/btn angelim frisada.jpg" id="img" onclick="mudaImagem(4)"></a>
@@ -114,7 +118,7 @@
 						<a><img src="img/btn pivotante.jpg" id="img2" onclick="mudaImagem(17)"></a>
 						<a><img src="img/btn eucalipto puxador.jpg" id="img2" onclick="mudaImagem(19)"></a>
 						<a><img src="img/btn eucalipto vigia.jpg" id="img2" onclick="mudaImagem(21)"  /></a>
-					<td id="botoes-direita"><a><img src="img/btn pinus correr.jpg" id="img2" onclick="mudaImagem(16)"></a>
+					<a><img src="img/btn pinus correr.jpg" id="img2" onclick="mudaImagem(16)"></a>
 						<a><img src="img/btn solida.jpg" id="img2" onclick="mudaImagem(18)"></a>
 						<a><img src="img/btn eucalipto fechadura.jpg" id="img2" onclick="mudaImagem(20)"></a>
 						<a><img src="img/btn externa tauari.jpg" id="img2" onclick="mudaImagem(22)"></a>
@@ -138,7 +142,6 @@
 			<a><img src="img/btn pa y.jpg" id="img3" onclick="mudaImagem(36)"></a>
 			<a><img src="img/btn vassoura.jpg" id="img3" onclick="mudaImagem(37)"></a>
 		</section>
-
 		<footer>
 			<div id="footer">
 				<div id="contato">

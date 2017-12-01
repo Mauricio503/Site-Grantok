@@ -14,53 +14,38 @@ black 1.4px -1.4px, black -1.4px 1.4px;}
 .menu li:nth-child(6) a{margin-right: 0;}
 .menu li:nth-child(1n+4) a{text-align: right;}
 .menu li:nth-child(1){margin-left: 45px;}
-.logo img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;left: 615px;margin-top: 26px;}
+.logo img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;}
 .site{text-align: center;}
 /*Slide*/
 .example-desc {margin:3px 0;padding:5px;}
-#carousel {width:1180px;height:450px;position:relative;clear:both;overflow:hidden;background:#FFF;}
+#carousel {width: 80vw;height:450px;position:absolute;clear:both;overflow:hidden;background:#FFF;}/*width 930*/
 #carousel img {width: 400px;height: 400px;visibility:hidden;cursor:pointer;}
 #callback-output {height:250px;overflow:scroll;}
 textarea#newoptions {width:430px;}
-#prev img,#next img{width: 110px;height: 80px;margin: 0 3px 0 3px;}
+#prev img,#next img{width: 5vw;height: 80px;margin: 0 3px 0 3px;} /*110*/
 .example-desc {margin:3px 0;padding:5px;}
 /* Produtos pagina incial*/
 section{width: 100%;height: 100%;margin-top: 10px;}
 #imagem-principal{width: 765px;height: 800px;overflow: hidden;}
 #titulo-produtos{text-align: center;font-size: 50px;text-decoration: underline;}
 #subtitulo-produtos{text-align: center;font-size: 30px;}
-#img{width: 163px;height: 100px;}
-#img2{width: 159px;height: 100px;}
+#img{width: 10vw;height: 100px;}
+#img2{width: 10vw;height: 100px;}
 #img3{width: 163px;height: 100px;margin-left: 10px;}
 button{border: 0;background: white;}
+#imagem-principal{width: 55vw}
 #imagem-principal-cabos {width: 100%;height: 400px;}
-#botoes-direita{width: 159px;}
+#botoes-direita{width: 100%;float: left;}
+#botoes-esquerda{width: 322px;}
 /*Footer*/
-#footer{width: 100%;height: 280px;background: #096735;margin-top: 10px;}
-#contato{
-	width: 350px;
-	height: 260px;
-	text-align: center;
-	color: white;
-	font-size: 25px;
-	margin-left: 150px;
-	float: left;
-}
-#endereco{
-	width: 350px;
-	height: 260px;
-	text-align: center;
-	color: white;
-	font-size: 25px;
-	margin-left: 300px;
-	float: left;
-}
-#autoria{
-	width: 100%;
-	height: 20px;
-	background: grey;
-	float: left;
-}
+#footer{width: 100%;height: 100%;background: #096735;margin-top: 10px; float: left;}
+#contato{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}/*margin-left: 150px;*/
+#endereco{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}/*width350 margin-left: 300px;*/
+#autoria{width: 100%;height: 20px;background: grey;float: left;}
 #autoria b{float: right;}
 #autoria a{float: right;}
-/*Fim footer*/
+/*Sub-menu Produtos*/
+.sub-menu ul{list-style: none;text-align: center;}
+.sub-menu li{float: left;text-align: center;margin-left: 10px;}
+.sub-menu li a{width: 160px;height: 30px;display: block;padding: 10px 0;font-size: 20px;text-decoration: none;margin: 10px 10px 0 0;color: black;}
+
