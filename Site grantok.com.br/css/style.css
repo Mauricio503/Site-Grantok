@@ -14,15 +14,15 @@ black 1.4px -1.4px, black -1.4px 1.4px;}
 .menu li:nth-child(6) a{margin-right: 0;}
 .menu li:nth-child(1n+4) a{text-align: right;}
 .menu li:nth-child(1){margin-left: 45px;}
-.logo img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;}
+.logo img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px; left: 620px;}
 .site{text-align: center;}
 /*Slide*/
 .example-desc {margin:3px 0;padding:5px;}
-#carousel {width: 80vw;height:450px;position:absolute;clear:both;overflow:hidden;background:#FFF;}/*width 930*/
+#carousel {width: 80vw;height:450px;position:absolute;clear:both;overflow:hidden;background:#FFF;}
 #carousel img {width: 400px;height: 400px;visibility:hidden;cursor:pointer;}
 #callback-output {height:250px;overflow:scroll;}
 textarea#newoptions {width:430px;}
-#prev img,#next img{width: 5vw;height: 80px;margin: 0 3px 0 3px;} /*110*/
+#prev img,#next img{width: 5vw;height: 80px;margin: 0 3px 0 3px;}
 .example-desc {margin:3px 0;padding:5px;}
 /* Produtos pagina incial*/
 section{width: 100%;height: 100%;margin-top: 10px;}
@@ -35,12 +35,12 @@ section{width: 100%;height: 100%;margin-top: 10px;}
 button{border: 0;background: white;}
 #imagem-principal{width: 55vw}
 #imagem-principal-cabos {width: 100%;height: 400px;}
-#botoes-direita{width: 100%;float: left;}
+#botoes-direita{width: 295px;}
 #botoes-esquerda{width: 322px;}
 /*Footer*/
 #footer{width: 100%;height: 100%;background: #096735;margin-top: 10px; float: left;}
-#contato{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}/*margin-left: 150px;*/
-#endereco{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}/*width350 margin-left: 300px;*/
+#contato{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}
+#endereco{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}
 #autoria{width: 100%;height: 20px;background: grey;float: left;}
 #autoria b{float: right;}
 #autoria a{float: right;}
@@ -50,6 +50,8 @@ button{border: 0;background: white;}
 .sub-menu li{float: left;text-align: center;margin-left: 10px;}
 .sub-menu li a{width: 150px;height: 30px;display: block;padding: 10px 0;font-size: 20px;text-decoration: none;margin: 10px 10px 0 0;color: black;}
 .submenu-todos{border-bottom: solid 5px #096735;}
-#prod{width: 17vw;height: 20vw;float: left;}
-#prod img{width: 17vw; height: 13vw;}
+#prod{width: 16vw;height: 20vw;float: left;}
+#prod img{width: 16vw; height: 15vw;}
 #teste {width: 100%; height: 100%;}
+/*Sub Menu Angelim,HDF,MDF,Misto,Pinus,Eucalipto*/
+.submenu-angelim, .submenu-hdf, .submenu-mdf, .submenu-misto, .submenu-pinus, .submenu-eucalipto, .submenu-cabo{border-bottom: solid 5px #096735;}
