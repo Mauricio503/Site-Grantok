@@ -39,8 +39,8 @@ button{border: 0;background: white;}
 #botoes-esquerda{width: 322px;}
 /*Footer*/
 #footer{width: 100%;height: 100%;background: #096735;margin-top: 10px; float: left;}
-#contato{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}
-#endereco{width: 50%;height: 260px;text-align: center;color: white;font-size: 25px;float: left;}
+#contato{width: 50%;height: 260px;text-align: center;color: white;font-size: 20px;float: left;}
+#endereco{width: 50%;height: 260px;text-align: center;color: white;font-size: 20px;float: left;}
 #autoria{width: 100%;height: 20px;background: grey;float: left;}
 #autoria b{float: right;}
 #autoria a{float: right;}
@@ -52,6 +52,13 @@ button{border: 0;background: white;}
 .submenu-todos{border-bottom: solid 5px #096735;}
 #prod{width: 16vw;height: 20vw;float: left;}
 #prod img{width: 16vw; height: 15vw;}
-#teste {width: 100%; height: 100%;}
 /*Sub Menu Angelim,HDF,MDF,Misto,Pinus,Eucalipto*/
 .submenu-angelim, .submenu-hdf, .submenu-mdf, .submenu-misto, .submenu-pinus, .submenu-eucalipto, .submenu-cabo{border-bottom: solid 5px #096735;}
+/*Cada Produto*/
+h1{width: 100%; margin:30px 0 30px 0; float: left;}
+.img-zoom{width: 400px; height: 500px}
+#especificacoes{width:500px; height: 300px;float: right;margin-right: 100px;}
+#especificacoes td {width: 200px; margin:0;}
+#especificacoes table { border: solid 1px;}
+#marco-hdf { width: 500px; height: 350px; float: right;margin-right: 100px;}
+.img-zoom-cabo{width: 50vw;height: 300px;}
