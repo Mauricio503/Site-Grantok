@@ -32,7 +32,6 @@ section{width: 100%;height: 100%;margin-top: 10px;}
 #img{width: 10vw;height: 100px;}
 #img2{width: 10vw;height: 100px;}
 #img3{width: 163px;height: 100px;margin-left: 10px;}
-button{border: 0;background: white;}
 #imagem-principal{width: 55vw}
 #imagem-principal-cabos {width: 100%;height: 400px;}
 #botoes-direita{width: 295px;}
@@ -62,3 +61,12 @@ h1{width: 100%; margin:30px 0 30px 0; float: left;}
 #especificacoes table { border: solid 1px;}
 #marco-hdf { width: 500px; height: 350px; float: right;margin-right: 100px;}
 .img-zoom-cabo{width: 50vw;height: 300px;}
+/*Empresa*/
+#logo-empresa{width: 30vw;height: 30vw; float: right;}
+#texto-empresa{width: 60vw;height: 30vw;float: left; font-size: 25px; margin: 30px;}
+/*Localização*/
+#localizacao{width: 50vw;height:30vw; float:left; font-size: 25px;margin-top: 30px;}
+/*Representantes*/
+.mapa{width: 32.7vw; height: 39.6vw; float: left;}
+#representante_atual{width: 20vw;height: 10vw; border: solid 1px;float: left;margin-left: 70px;font-size: 20px;}
+#repre{width: 280px;height: 14vw; border: solid 1px;font-size: 20px;float: left;}
