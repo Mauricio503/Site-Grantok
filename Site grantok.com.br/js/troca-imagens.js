@@ -33,7 +33,7 @@ function mudaImagem(i) {
     } else if (i == 16){
     	document.getElementById("imagem-principal").src="img/correr.png"
     } else if (i == 17){
-    	document.getElementById("imagem-principal").src="img/pivotante.png"
+    	document.getElementById("imagem-principal").src="img/interna eucalipto.png"
     } else if (i == 18){
     	document.getElementById("imagem-principal").src="img/solida.png"
     } else if (i == 19){
