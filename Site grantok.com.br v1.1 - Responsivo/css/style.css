@@ -18,10 +18,12 @@ header{min-height: 60px;top: 0;right: 0;left: 0;z-index: 2;}
 header h1{padding: 10px 0 0 10px;}
 header h1 a{color: #333;}
 header li:first-child {border: none;}
-header li a {display: block;padding: 0 10px;color: #999;font-size: 16px;line-height: 30px;text-decoration: none;-webkit-transition: all 300ms ease;transition: all 300ms ease;}
+header li a {display: block;padding: 0 10px;color: #999;font-size: 16px;line-height: 30px;text-decoration: none;-webkit-transition: all 300ms ease;
+transition: all 300ms ease;}
 input#control-nav {visibility: hidden;position: absolute;left: -9999px;opacity: 0;}
 @media screen and (max-width: 767px) {header nav {position: fixed;top: 0;right: 0;bottom: 0;width: 250px;border-left: 1px solid #ccc;background: #fff;overflow-x: auto;
-z-index: 2;-webkit-transition: all 500ms ease;transition: all 500ms ease;-webkit-transform: translate(100%, 0);-ms-transform: translate(100%, 0);transform: translate(100%, 0);}
+z-index: 105;-webkit-transition: all 500ms ease;transition: all 500ms ease;-webkit-transform: translate(100%, 0);-ms-transform: translate(100%, 0);
+transform: translate(100%, 0);}
 header ul.list-auto {padding: 0;}
 header ul.list-auto li a{width: 100%;}
 header ul.list-auto li{margin:0;}
@@ -30,10 +32,10 @@ header ul.list-auto li:nth-child(1){margin:0;}
 header ul.list-auto li {width: 100%;height: 100%;border: solid #ccc;border-width: 0 0 1px;}
 header li a {padding: 15px 10px;}
 header li a:hover {width: 100%;background-color: #ccc;}
-.control-nav {position: absolute;right: 20px;top: 20px;display: block;width: 30px;padding: 5px 0;border: solid #333;border-width: 3px 0;z-index: 3;cursor: pointer;}
+.control-nav {position: fixed;right: 20px;top: 20px;display: block;width: 30px;padding: 5px 0;border: solid #333;border-width: 3px 0;z-index: 106;cursor: pointer;}
 .control-nav:before {content: "";display: block;height: 3px;background: #333;}
-header.control-nav-close {position: fixed;right: 0;top: 0;bottom: 0;left: 0;display: block;z-index: 1;background: rgba(0,0,0,0.4);-webkit-transition: all 500ms ease;transition: all 500ms ease;
--webkit-transform: translate(100%, 0);-ms-transform: translate(100%, 0);transform: translate(100%, 0);}
+header.control-nav-close {position: fixed;right: 0;top: 0;bottom: 0;left: 0;display: block;z-index: 1;background: rgba(0,0,0,0.4);-webkit-transition: all 500ms ease;
+transition: all 500ms ease;-webkit-transform: translate(100%, 0);-ms-transform: translate(100%, 0);transform: translate(100%, 0);}
 input#control-nav {display: block;}
 input#control-nav:focus ~ .control-nav {border-color: #000;box-shadow: 0px 0px 9px rgba(0,0,0,0.3);}
 input#control-nav:focus ~ .control-nav:before {background: #000;}
@@ -54,7 +56,7 @@ input#control-nav:checked ~ .control-nav-close {-webkit-transform: translate(0, 
 #callback-output {height:250px;overflow:scroll;}
 textarea#newoptions {width:430px;}
 @media screen and (min-width: 768px){#prev img,#next img{width: 5vw;height: 80px;margin: 0 3px 0 3px;}}
-@media screen and (max-width: 767px) {#prev img,#next img{width: 5vw;height: 80px;margin: 0 3px 0 3px;margin-top: 60px;}}
+@media screen and (max-width: 767px) {#prev img,#next img{width: 5vw;height: 80px;margin-top: 60px;}}
 .example-desc {margin:3px 0;padding:5px;}
 /* Produtos pagina incial*/
 section{width: 100%;height: 100%;margin-top: 10px;}
@@ -63,9 +65,9 @@ section{width: 100%;height: 100%;margin-top: 10px;}
 @media screen and (min-width: 768px){#subtitulo-produtos{text-align: center;font-size: 30px;}}
 @media screen and (max-width: 767px){#subtitulo-produtos{text-align: center;font-size: 20px;}}
 @media screen and (min-width: 768px){#img{width: 10vw;height: 7vw;}}
-@media screen and (max-width: 767px){#img{width: 17vw;height: 10vw;}}
+@media screen and (max-width: 767px){#img{width: 15vw;height: 10vw;}}
 @media screen and (min-width: 768px){#img2{width: 10vw;height: 7vw;}}
-@media screen and (max-width: 767px){#img2{width: 17vw;height: 10vw;}}
+@media screen and (max-width: 767px){#img2{width: 15vw;height: 10vw;}}
 @media screen and (min-width: 768px){#img3{width: 10vw;height: 7vw;margin-left: 10px;}}
 @media screen and (max-width: 767px){#img3{width: 17vw;height: 10vw;}}
 @media screen and (min-width: 768px){#imagem-principal{width: 55vw;height: 60vw;}}
@@ -80,8 +82,10 @@ section{width: 100%;height: 100%;margin-top: 10px;}
 @media screen and (min-width: 768px){#endereco{width: 50%;height: 260px;text-align: center;color: white;font-size: 20px;float: left;}}
 @media screen and (max-width: 767px){#endereco{width: 100%;height: 260px;text-align: center;color: white;font-size: 20px;}}
 #autoria{width: 100%;height: 100%;background: grey;float: left;}
-#autoria b{float: right;}
-#autoria a{float: right;}
+@media screen and (min-width: 768px){#autoria b{float: right;}}
+@media screen and (max-width: 767px){#autoria b{float: left;}}
+@media screen and (min-width: 768px){#autoria a{float: right;}}
+@media screen and (max-width: 767px){#autoria a{float: right; margin-top: 18px;}}
 /*Sub-menu Produtos*/
 @media screen and (min-width: 768px){.sub-menu{width: 100%;height: 100%; float: left;}}
 @media screen and (max-width: 767px){.sub-menu{width: 100%;height: 100%; float: left;margin-top: 80px;}}
@@ -103,12 +107,13 @@ h1{width: 100%; margin:30px 0 30px 0; float: left;}
 @media screen and (max-width: 767px){.img-zoom{width: 100%; height: 20%;}}
 @media screen and (min-width: 768px){#especificacoes{width:500px; height: 300px;float: right;margin-right: 100px;}}
 @media screen and (max-width: 767px){#especificacoes{width:100%; height: 300px;float: left}}
-@media screen and (min-width: 768px){#especificacoes td {width: 100px; margin:0;}}
+@media screen and (min-width: 768px){#especificacoes td {width: 10vw; margin:0;}}
 @media screen and (max-width: 767px){#titulo-prod{margin-top: 70px;}}
 #especificacoes table { border: solid 1px;}
 @media screen and (min-width: 768px){#marco-hdf{width: 500px; height: 350px; float: right;margin-right: 100px;}}
 @media screen and (max-width: 767px){#marco-hdf{width: 100%; height: 10%; float: right;}}
 .img-zoom-cabo{width: 50vw;height: 300px;}
+@media screen and (max-width: 767px){.img-zoom-cabo{width: 100%;height: 100%;}}
 /*Empresa*/
 #logo-empresa{width: 30vw;height: 30vw; float: right;}
 @media screen and (max-width: 767px){#logo-empresa{width: 0;height: 0; float: right;}}
@@ -120,10 +125,9 @@ h1{width: 100%; margin:30px 0 30px 0; float: left;}
 @media screen and (max-width: 767px){#maps-google{width: 100%; margin-top: 80px;}}
 /*Representantes*/
 .mapa{width: 32.7vw; height: 39.6vw; float: left;}
-@media screen and (max-width: 767px){.mapa{width: 100%; height:100%; float: left; margin-top: 80px;}}
-#representante_atual{width: 20vw;height: 10vw; border: solid 1px;float: right;font-size: 20px;}
-@media screen and (max-width: 767px){#representante_atual{width: 100%;height: 100%; border: solid 1px;float: left;font-size: 20px;}}
+@media screen and (max-width: 767px){.mapa{width: 0; height:0; float: left; margin-top: 80px;}}
+#representante_atual{width: 20vw;height: 10vw; border: solid 1px;font-size: 20px;float: left;}
+@media screen and (max-width: 767px){#representante_atual{width: 0;height: 0; border: solid 1px;float: left;font-size: 20px;}}
 #repre{width: 280px;height: 14vw; border: solid 1px;font-size: 20px;float: left;}
 @media screen and (max-width: 767px){#repre{width: 280px;height: 100%; border: solid 1px;font-size: 20px;float: left;}}
-
-
+@media screen and (max-width: 767px){#titulo-representantes{margin-top: 80px;}}
