@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Grantok Portas & Cabos</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />		
+	<!--Zoom-->
+	<!--http://www.rafaelwendel.com/2012/10/zoom-de-imagens-com-jqzoom/-->
+	<title>JQZoom</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery-1.6.js" type="text/javascript"></script>
+        <script src="js/jquery.jqzoom-core.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/jquery.jqzoom.css" type="text/css">
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.jqzoom').jqzoom({
+                    zoomType : 'standard'
+                });
+            })
+        </script>	
+</head>
+<body>
+	<div id="geral">
+		<header>
+			<div id="telefone">
+				(49) 3434-0605 - 3434-0493
+			</div>
+			 <input type="checkbox" id="control-nav" />
+      			<label for="control-nav" class="control-nav"></label>
+    			<label for="control-nav" class="control-nav-close"></label>
+
+			<nav class="menu">
+		    	<ul class="list-auto">
+				    <li><a href="index.html">Pagina Inicial</a></li>
+				    <li><a href="produtos.html">Produtos</a></li>
+				    <li><a href="empresa.html">Empresa</a></li>
+				    <li><a href="localizacao.html">Localização</a></li>
+				    <li><a href="representantes.html">Representantes</a></li>
+		    	</ul>
+			</nav>
+			<div class="logo" align="middle"><img src="img/logo.jpg" alt="logo"></div>
+		</header>
+		<section itemscope itemtype = "http://schema.org/Product">
+			<h1 itemprop="name" align="middle" id="titulo-prod">Angelim</h1>
+			<hr size="5" color=#096735 style="width: 100%">
+			<br>
+			<a href="img/angelim lisa ad.png" class="jqzoom" title="Angelim">
+            <img itemprop="image" src="img/angelim lisa.png" title="Angelim" class="img-zoom" alt="zoom angelim lisa" />
+        </a>
+        <div id="especificacoes">
+        	<h2 align="middle">Especificações</h2>
+        	<table itemprop="description">
+        	<td><b>Comp.(m)</b>
+        		<p>2,10</p>
+        		<p>2,10</p>
+        		<p>2,10</p>
+        		<p>2,10</p>
+        	<td><b>Larg.(cm)</b>
+        		<p>60</p>
+        		<p>70</p>
+        		<p>80</p>
+        		<p>90</p>
+        	<td><b>Alt.(cm)</b>	
+        		<p>13,14,15,18,20</p>
+        		<p>13,14,15,18,20</p>
+        		<p>13,14,15,18,20</p>
+        		<p>13,14,15,18,20</p>
+        	</table>
+        	<p>- Lado Esquerdo ou Direito;<br>
+        	- Marco Angelim,Tauari ou Eucalipto;</p>
+        </div>
+		</section>
+		<footer itemscope itemtype="http://schema.org/Organization">
+			<span itemprop="name" style="display: none">Grantok Portas e Cabos</span>
+			<div id="footer">
+				<div id="contato">
+					<h2>Contato</h2><br>
+					<p itemprop="telephone">(49) 3434-0493<br><br>
+					(49) 3434-0605<br><br></p>
+					<p itemprop="email">atendimento@grantok.com.br</p>
+				</div>
+				<div id="endereco">
+					<h2>Endereço</h2><br>
+					<p itemprop="location">Rua Sete de Setembro, 01 - Centro<br><br>
+					Vargeão-SC<br><br>
+					89690-000</p>
+				</div>
+				<div id="autoria">
+					<p>Grantok - Todos os direitos reservados | Copyright 2018 <a itemprop="publisher" href="https://www.facebook.com/mauricio.spagnol.9">Maurício Spagnol</a><b>Desenvolvido por: </b></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Grantok Portas & Cabos</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+			<!--Slider-->
+			<!--https://bkosborne.com/jquery-waterwheel-carousel-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Slider Portas(Carousel)</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 2,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+		<!--Fim Slider-->
+		<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "http://www.grantok.com.br",
+  "name": "Grantok Portas e Cabos",
+  "email": "atendimento@grantok.com.br",
+  "address": "Rua Sete de Setembro 01 - Centro - Vargeão-SC - 89690-000"
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "49 3434-0493",
+
+  }
+}
+</script>
+</head>
+<body>
+	<div id="geral">
+		<header>
+			<div id="telefone">
+				(49) 3434-0605 - 3434-0493
+			</div>
+			<!--Menu  https://tableless.com.br/header-responsivo-somente-com-css/-->
+			    <input type="checkbox" id="control-nav" />
+      			<label for="control-nav" class="control-nav"></label>
+    			<label for="control-nav" class="control-nav-close"></label>
+
+			<nav class="menu">
+		    	<ul class="list-auto">
+				    <li><a href="index.html">Pagina Inicial</a></li>
+				    <li><a href="produtos.html">Produtos</a></li>
+				    <li><a href="empresa.html">Empresa</a></li>
+				    <li><a href="localizacao.html">Localização</a></li>
+				    <li><a href="representantes.html">Representantes</a></li>
+		    	</ul>
+			</nav>
+			<div class="logo" align="middle"><img src="img/logo.jpg" alt="logo"></div>
+		</header>
+		<!--Slider-->		
+		<div align="middle">
+		<table>
+			<tr>
+		<td><a href="#" id="prev"><img src="img/prev.png" alt="anterior"></a>		    	
+    	<td><div id="carousel">
+      		<a href="#"><img src="img/angelim lisa.png" id="item-1" alt="angelim lisa" /></a>
+      		<a href="#"><img src="img/angelim frisada gr-19.png" id="item-2" alt="angelim frisada"/></a>
+		    <a href="#"><img src="img/hdf branca.png" id="item-3" alt="hdf"/></a>
+		    <a href="#"><img src="img/mdf frisada gr-18.png" id="item-4" alt="hdf frisada gr-18"/></a>
+		    <a href="#"><img src="img/pintura.png" id="item-5" alt="pintura" /></a>
+		    <a href="#"><img src="img/pivotante aberta.png" id="item-6" alt="pivatante" /></a>	
+		    <a href="#"><img src="img/frisada.png" id="item-7" alt="frisada" ></a>
+		    <a href="#"><img src="img/bbb.png" id="item-8" alt="bbb"></a>
+		    <a href="#"><img src="img/externa mista.png" id="item-9" alt="externa mista"></a>	    
+    	</div>
+    	<td><a href="#" id="next"><img src="img/next.png" alt="proximo"></a> 
+    	</tr>
+    	</table>
+
+    	<img src="http://3.bp.blogspot.com/-Bo2GNAVNb90/URkAlN-0V_I/AAAAAAAACfs/VHFT6oP1ZTk/s1600/Loading+-+Carregando+%252826%2529.gif" alt="" id="loading" class="content"/>
+    	<script type="text/javascript" src="js/loading.js"></script>
+ 
+
+    	</div>
+		<!--Fim Slider-->
+		<hr size="5" color=#096735 style="width: 100%;">
+		<section> 
+			<h1 id="titulo-produtos">Produtos</h1>
+			<br>
+			<h2 id="subtitulo-produtos">Portas</h2>
+			<!--Troca de Imagem a cada clique no botão-->
+			<table>
+				<tr>
+					<script type="text/javascript" src="js/troca-imagens.js"></script>
+					<td id="botoes-esquerda"><a itemprop="url"><img src="img/btn hdf branca.jpg" id="img"" onclick="mudaImagem(1)" alt="hdf" /></a>
+						<a><img src="img/btn hdf frisada.jpg" id="img" onclick="mudaImagem(2)" alt="botão hdf frisada" /></a>  
+						<a><img src="img/btn angelim.jpg" id="img" onclick="mudaImagem(3)" alt="botão angelim"></a>
+						<a><img src="img/btn angelim frisada.jpg" id="img" onclick="mudaImagem(4)" alt="botão angelim frisada"></a>
+						<a><img src="img/btn bbb.jpg" id="img" onclick="mudaImagem(5)" alt="botão bbb"></a>
+						<a><img src="img/btn externa pinus.jpg" id="img" onclick="mudaImagem(7)" alt="botão externa pinus"></a>
+						<a><img src="img/btn interna pinus.jpg" id="img" onclick="mudaImagem(8)" alt="botão interna pinus"></a>
+						<a><img src="img/btn externa mista.jpg" id="img" onclick="mudaImagem(10)" alt="botão externa mista"></a>
+						<a><img src="img/btn mdf.jpg" id="img" onclick="mudaImagem(11)" alt="botão mdf"></a>
+						<a><img src="img/btn mdf gr-18.jpg" id="img" onclick="mudaImagem(12)" alt="botão mdf gr18"></a>
+					<td><img itemprop="image" src="img/hdf branca.png" alt="Imagem1" id="imagem-principal" alt="imagem principal">
+					<td id="botoes-direita"><a itemprop="url"><img src="img/btn mdf gr-19.jpg" id="img2" onclick="mudaImagem(13)" alt="botão mdf gr19"></a>
+						<a><img src="img/btn mdf gr-20.jpg" id="img2" onclick="mudaImagem(14)" alt="botão mdf gr20"></a>
+						<a><img src="img/btn angelim gr-18.jpg" id="img2" onclick="mudaImagem(15)" alt="botão angelim gr18"></a>
+						<a><img src="img/btn interna eucalipto.jpg" id="img2" onclick="mudaImagem(17)" alt="botão interna eucalipto"></a>
+						<a><img src="img/btn eucalipto puxador.jpg" id="img2" onclick="mudaImagem(19)" alt="botão eucalipto puxador"></a>
+						<a><img src="img/btn eucalipto vigia.jpg" id="img2" onclick="mudaImagem(21)" alt="botão eucalipto vigia" /></a>
+					<a><img src="img/btn pinus correr.jpg" id="img2" onclick="mudaImagem(16)" alt="botão pinus correr"></a>
+						<a><img src="img/btn eucalipto fechadura.jpg" id="img2" onclick="mudaImagem(20)" alt="eucalipto fechadura"></a>
+						<a><img src="img/btn externa tauari.jpg" id="img2" onclick="mudaImagem(22)" alt="botão esterna tauari"></a>
+				</tr>	
+			</table>
+			<div>
+			<h2 id="subtitulo-produtos">Cabos</h2>
+			<a><img src="img/btn ancinho.jpg" id="img3" onclick="mudaImagem(23)" alt="botão ancinho"></a>
+			<a><img src="img/btn enxadao.jpg" id="img3" onclick="mudaImagem(24)" alt="botão enxadao"></a>
+			<a><img src="img/btn machado.jpg" id="img3" onclick="mudaImagem(25)" alt="botão machado"></a>
+			<a><img src="img/btn martelo.jpg" id="img3" onclick="mudaImagem(26)" alt="botão martelo"></a>
+			<a><img src="img/btn picareta.jpg" id="img3" onclick="mudaImagem(27)" alt="botão picareta"></a>
+			<a><img src="img/btn cavadeira.jpg" id="img3" onclick="mudaImagem(28)" alt="botão cavadeira"></a>
+			<a><img src="img/btn enxada cabeçuda.jpg" id="img3" onclick="mudaImagem(29)" alt="botão enxada cabeçuda"></a>
+			<a><img src="img/btn enxada oval.jpg" id="img3" onclick="mudaImagem(30)" alt="botão enxada oval"></a>
+			<img src="img/ancinho.png" id="imagem-principal-cabos" alt="imagem principal cabo">
+			<a><img src="img/btn enxada redondo.jpg" id="img3" onclick="mudaImagem(31)" alt="botão enxada redondo"></a>
+			<a><img src="img/btn foice.jpg" id="img3" onclick="mudaImagem(32)" alt="foice"></a>
+			<a><img src="img/btn marreta.jpg" id="img3" onclick="mudaImagem(33)" alt="marreta"></a>
+			<a><img src="img/btn pa curvo.jpg" id="img3" onclick="mudaImagem(34)" alt="pa curvo"></a>
+			<a><img src="img/btn pa reto.jpg" id="img3" onclick="mudaImagem(35)" alt="pa reto"></a>
+			<a><img src="img/btn pa y.jpg" id="img3" onclick="mudaImagem(36)" alt="pa y"></a>
+			<a><img src="img/btn vassoura.jpg" id="img3" onclick="mudaImagem(37)" alt="vassoura"></a>
+			</div>
+		</section>
+		<footer>
+			<span style="display: none">Grantok Portas e Cabos</span>
+			<div id="footer">
+				<div id="contato">
+					<h2>Contato</h2><br>
+					<p>(49) 3434-0493<br><br>
+					(49) 3434-0605<br><br></p>
+					<p>atendimento@grantok.com.br</p>
+				</div>
+				<div id="endereco">
+					<h2>Endereço</h2><br>
+					<p>Rua Sete de Setembro, 01 - Centro<br><br>
+					Vargeão-SC<br><br>
+					89690-000</p>
+				</div>
+				<div id="autoria">
+					<p>Grantok - Todos os direitos reservados | Copyright 2018 <a href="https://www.facebook.com/mauricio.spagnol.9">Maurício Spagnol</a><b>Desenvolvido por: </b></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+</html>	
