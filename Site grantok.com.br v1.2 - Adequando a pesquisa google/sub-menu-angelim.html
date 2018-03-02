@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt" amp>
 <head>
 	<meta charset="UTF-8">
 	<title>Grantok Portas & Cabos</title>
+	<link rel="alternate" hreflang="pt-br" href="alternateURL">
+	<link rel="canonical" href="index.html">
 	<!--Link Mais Informações https://codyhouse.co/gem/css-product-quick-view/-->
 		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style-quick-view.css"> <!-- Resource style -->
@@ -14,7 +16,33 @@
     <!--Fim Link Mais Informações-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1,minimum-scale=1, user-scalable=no" />
+
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+  			"@type": "SomeProducts",
+  			"url": ["http://grantok.com.br/angelim.html","http://grantok.com.br/angelim-gr19.html","http://grantok.com.br/angelim-frisada-gr18.html"]
+  		}
+		</script>	
+		<script type="application/ld+json">
+  		{
+			"@context": "http://schema.org",
+			"@type": "WebPage",
+  			"publisher": "Maurício Spagnol"
+  		}
+  		</script>
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<style amp-custom>
+  body {
+    background-color: white;
+  }
+</style>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script type="text/javascript" src="js/scrolltop.js"></script>
+  		
 </head>
 <body>
 	<div id="geral">
@@ -22,9 +50,11 @@
 			<div id="telefone">
 				(49) 3434-0605 - 3434-0493
 			</div>
+			<!--menu responsivo para celular-->
 			    <input type="checkbox" id="control-nav" />
       			<label for="control-nav" class="control-nav"></label>
-    			<label for="control-nav" class="control-nav-close"></label>			
+    			<label for="control-nav" class="control-nav-close"></label>
+    			<!--fim menu responsivo para celular-->			
 			<nav class="menu">
 		    	<ul class="list-auto">
 				    <li><a href="index.html">Pagina Inicial</a></li>
@@ -34,9 +64,10 @@
 				    <li><a href="representantes.html">Representantes</a></li>
 		    	</ul>
 			</nav>
-			<div class="logo" align="middle"><img src="img/logo.jpg" alt="logo"></div>		
+			<div class="logo" align="middle"><amp-img src="img/logo.jpg" alt="logo"></amp-img></div>
 		</header>
-		<section  itemscope itemtype = "http://schema.org/Product">
+		<a href="#" class="scrollToTop"></a>
+		<section>
 			<div class="sub-menu">
 				<ul>
 					<li><a href="produtos.html" tabindex="0">Todos</a></li>
@@ -50,45 +81,52 @@
 				</ul>
 			</div>
 			<div id="prod">
-				<img src="img/angelim lisa.png" alt="angelim lisa">
+				<a href="angelim.html">
+				<amp-img src="img/angelim lisa.png" alt="angelim lisa"></amp-img>
 				<li class="cd-item">
-					<a itemprop="url" href="angelim.html" class="cd-trigger">Mais Informações</a>
+					<a href="angelim.html" class="cd-trigger">Mais Informações</a>
 				</li>
-				<p itemprop="name" align="middle">Angelim<p/>
+				<p align="middle">Angelim</p>
+				</a>					
 			</div>
 			<div id="prod">
-				<img src="img/angelim frisada gr-19.png" alt="angelim frisada gr19">
+				<a href="angelim-gr19.html">
+				<amp-img src="img/angelim frisada gr-19.png" alt="angelim frisada gr19"></amp-img>
 				<li class="cd-item">
-					<a itemprop="url" href="angelim gr-19.html" class="cd-trigger">Mais Informações</a>
+					<a href="angelim-gr19.html" class="cd-trigger">Mais Informações</a>
 				</li>
-				<p itemprop="name" align="middle">Angelim Frisada GR-19<p/>
+				<p align="middle">Angelim Frisada GR-19</p>
+				</a>	
 			</div>
 			<div id="prod">
-				<img src="img/angelim gr-18.png" alt="angelim frisada gr18">
+				<a href="angelim-frisada-gr18.html">
+				<amp-img src="img/angelim gr-18.png" alt="angelim frisada gr18"></amp-img>
 				<li class="cd-item">
-					<a itemprop="url" href="angelim frisada gr-18.html" class="cd-trigger">Mais Informações</a>
+					<a href="angelim-frisada-gr18.html" class="cd-trigger">Mais Informações</a>
 				</li>
-				<p itemprop="name" align="middle">Angelim Frisada GR-18<br>
-				<p/>
+				<p align="middle">Angelim Frisada GR-18<br>
+				</p>
+				</a>
 			</div>
 		</section>
-		<footer itemscope itemtype="http://schema.org/Organization">
-			<span itemprop="name" style="display: none">Grantok Portas e Cabos</span>
+		<footer>
 			<div id="footer">
 				<div id="contato">
+					<br>
 					<h2>Contato</h2><br>
-					<p itemprop="telephone">(49) 3434-0493<br><br>
+					<p>(49) 3434-0493<br><br>
 					(49) 3434-0605<br><br></p>
-					<p itemprop="email">atendimento@grantok.com.br</p>
+					<p>atendimento@grantok.com.br</p>
 				</div>
 				<div id="endereco">
+					<br>
 					<h2>Endereço</h2><br>
-					<p itemprop="location">Rua Sete de Setembro, 01 - Centro<br><br>
+					<p>Rua Sete de Setembro, 01 - Centro<br><br>
 					Vargeão-SC<br><br>
 					89690-000</p>
 				</div>
 				<div id="autoria">
-					<p>Grantok - Todos os direitos reservados | Copyright 2018 <a itemprop="publisher" href="https://www.facebook.com/mauricio.spagnol.9">Maurício Spagnol</a><b>Desenvolvido por: </b></p>
+					<p>Grantok - Todos os direitos reservados | Copyright 2018 <a href="https://www.facebook.com/mauricio.spagnol.9">Maurício Spagnol</a><b>Desenvolvido por: </b></p>
 				</div>
 			</div>
 		</footer>

@@ -92,7 +92,7 @@ Main components
     background-color: #392c3f;
   }
 }
-
+@media only screen and (min-width: 768px) {
 .cd-trigger {
   position: absolute;
   height: 50px;
@@ -110,7 +110,29 @@ Main components
   -webkit-transition: opacity 0.2s, background-color 0.2s;
   -moz-transition: opacity 0.2s, background-color 0.2s;
   transition: opacity 0.2s, background-color 0.2s;
+  }
 }
+
+@media only screen and (max-width: 767px) {
+  .cd-trigger {
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s, background-color 0.2s;
+  -moz-transition: opacity 0.2s, background-color 0.2s;
+  transition: opacity 0.2s, background-color 0.2s;
+  }
+}   
 .no-touch .cd-trigger:hover {
   background: #096735;
 }
@@ -121,14 +143,15 @@ Main components
     opacity: 1;
   }
 
-@media only screen and (min-width: 1170px) {
   .cd-trigger {
     /* only visible on hover on big devices */
     opacity: 0;
   }
-}
 
-
+#info-imagem-principal .cd-trigger {
+    /* only visible on hover on big devices */
+    opacity: 1;
+  }
   .no-touch #prod:hover .cd-trigger {
     opacity: 1;
   }

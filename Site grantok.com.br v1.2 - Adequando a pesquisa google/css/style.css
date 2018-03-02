@@ -44,36 +44,42 @@ input#control-nav:checked ~ nav,
 input#control-nav:checked ~ .control-nav-close {-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);transform: translate(0, 0);}
 .modal-content {padding: 10px 5%;min-width: 88%;}}
 @media screen and (max-width: 480px) {header h1 {font-size: 20px;line-height: 40px;}}
-@media screen and (min-width: 768px) {.logo img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;}}
-@media screen and (max-width: 767px) {.logo img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;}}
+@media screen and (min-width: 768px) {.logo amp-img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;left: 43.5%;}}
+@media screen and (max-width: 767px) {.logo amp-img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;left: 14%;}}
 .site{text-align: center;}
+@media screen and (min-width: 768px){.scrollToTop{position:fixed;background: grey;top:90%;right:40px;display:none;border-radius: 100px;height: 35px;z-index: 1;}}
+@media screen and (max-width: 767px){.scrollToTop{position:fixed;background: grey;top:94%;display:none;right: 0;}}
+.scrollToTop:before {content: "";display: inline-block;vertical-align: middle;margin: 10px;width: 0; height: 0;border-left: 10px solid transparent;
+border-right: 10px solid transparent;border-bottom: 10px solid black;}
 /*Slide*/
 .example-desc {margin:3px 0;padding:5px;}
 @media screen and (min-width: 768px) {#carousel {width: 80vw;height:30vw;position:all;
 	clear:both;overflow:hidden;background:#FFF;z-index: 0;}}
 @media screen and (max-width: 767px) {#carousel{width: 80vw;height:70vw;position:absolute;clear:both;overflow:hidden;background:#FFF;z-index: 0;margin-top: 60px;}}
-@media screen and (min-width: 768px) {#carousel img {width: 30vw;height: 30vw;visibility:hidden;cursor:pointer;}}
-@media screen and (max-width: 767px) {#carousel img {width: 70vw;height: 70vw;visibility:hidden;cursor:pointer;}}
+@media screen and (min-width: 768px) {#carousel img{visibility:hidden;cursor:pointer;}}
+@media screen and (min-width: 768px) {#item-1,#item-2,#item-7,#item-8{width: 30vw;height: 30vw;}}
+@media screen and (min-width: 768px) {#item-3{width: 33vw;height: 30vw;}}
+@media screen and (min-width: 768px) {#item-4,#item-6{width: 28vw;height: 30vw;}}
+@media screen and (min-width: 768px) {#item-5{width: 31vw;height: 30vw;}}
+@media screen and (max-width: 767px) {#carousel img{width: 70vw;height: 70vw;visibility:hidden;cursor:pointer;}}
 #callback-output {height:250px;overflow:scroll;}
 textarea#newoptions {width:430px;}
-@media screen and (min-width: 768px){#prev img,#next img{width: 5vw;height: 80px;margin: 0 3px 0 3px;}}
-@media screen and (max-width: 767px) {#prev img,#next img{width: 5vw;height: 80px;margin-top: 60px;}}
+@media screen and (min-width: 768px){#prev amp-img,#next amp-img{width: 5vw;height: 80px;margin: 0 3px 0 3px;}}
+@media screen and (max-width: 767px) {#prev amp-img,#next amp-img{width: 5vw;height: 80px;margin-top: 60px;}}
 .example-desc {margin:3px 0;padding:5px;}
 #loading {display: block;width: 200px;}
 .content { margin: 0 auto; }
 #all {width: 1280px; overflow: hidden;}
 /* Produtos pagina incial*/
-section{width: 100%;height: 100%;margin-top: 10px;}
-@media screen and (min-width: 768px){#titulo-produtos{text-align: center;font-size: 50px;text-decoration: underline;}}
-@media screen and (max-width: 767px){#titulo-produtos{text-align: center;font-size: 30px;text-decoration: underline;}}
-@media screen and (min-width: 768px){#subtitulo-produtos{text-align: center;font-size: 30px;}}
-@media screen and (max-width: 767px){#subtitulo-produtos{text-align: center;font-size: 20px;}}
-@media screen and (min-width: 768px){#img{width: 10vw;height: 7vw;}}
-@media screen and (max-width: 767px){#img{width: 15vw;height: 10vw;}}
-@media screen and (min-width: 768px){#img2{width: 10vw;height: 7vw;}}
-@media screen and (max-width: 767px){#img2{width: 15vw;height: 10vw;}}
-@media screen and (min-width: 768px){#img3{width: 10vw;height: 7vw;margin-left: 10px;}}
-@media screen and (max-width: 767px){#img3{width: 17vw;height: 10vw;}}
+section{width: 100%;height: 100%;}
+@media screen and (min-width: 768px){#titulo-produtos{width: 100%;text-align: center;font-size: 50px;background:#096735;color:white;}}
+@media screen and (max-width: 767px){#titulo-produtos{width: 100%;text-align: center;font-size: 30px;background:#096735;color:white;}}
+@media screen and (min-width: 768px){#img{width: 10vw;height: 7vw;float: left;border: solid 1px white;}}
+@media screen and (max-width: 767px){#img{width: 15vw;height: 10vw;border: solid 1px white;}}
+@media screen and (min-width: 768px){#img2{width: 10vw;height: 7vw;float: right;border: solid 1px white;}}
+@media screen and (max-width: 767px){#img2{width: 15vw;height: 10vw;float: right;border: solid 1px white;}}
+@media screen and (min-width: 768px){#img3{width: 10vw;height: 7vw;margin-left: 10px;float: left;}}
+@media screen and (max-width: 767px){#img3{width: 17vw;height: 10vw;float: left;margin-left: 3px;}}
 @media screen and (min-width: 768px){#imagem-principal{width: 55vw;height: 60vw;}}
 @media screen and (max-width: 767px){#imagem-principal{width: 60vw;height: 75vw;}}
 #imagem-principal-cabos {width: 100%;height: 35vw;}
@@ -103,24 +109,24 @@ color: black;float: left;}}
 .submenu-todos{border-bottom: solid 5px #096735;}
 @media screen and (min-width: 768px){#prod{width: 16vw;height: 20vw;float: left;}}
 @media screen and (max-width: 767px){#prod{width: 100%;height: 400px;float: left;margin-bottom: 50px;}}
-@media screen and (min-width: 768px){#prod img{width: 16vw; height: 15vw;margin-top: 5px;}}
-@media screen and (max-width: 767px){#prod img{width: 100%; height: 400px;margin-top: 5px;}}
+@media screen and (min-width: 768px){#prod amp-img{width: 16vw; height: 15vw;margin-top: 5px;}}
+@media screen and (max-width: 767px){#prod amp-img{width: 100%; height: 400px;margin-top: 5px;}}
 @media screen and (max-width: 767px){#prod p{width: 280px;}}
 /*Sub Menu Angelim,HDF,MDF,Misto,Pinus,Eucalipto*/
 .submenu-angelim, .submenu-hdf, .submenu-mdf, .submenu-misto, .submenu-pinus, .submenu-eucalipto, .submenu-cabo{border-bottom: solid 5px #096735;}
 /*Cada Produto*/
-h1{width: 100%; margin:30px 0 30px 0; float: left;}
 @media screen and (min-width: 768px){.img-zoom{width: 400px; height: 500px;}}
 @media screen and (max-width: 767px){.img-zoom{width: 100%; height: 20%;}}
-@media screen and (min-width: 768px){#especificacoes{width:500px; height: 300px;float: right;margin-right: 100px;}}
+@media screen and (min-width: 768px){#especificacoes{width:30vw; height: 300px;float: right;margin-right: 100px;}}
+#titulo-espe {width: 100%; background: #BDBDBD;}
 @media screen and (max-width: 767px){#especificacoes{width:100%; height: 300px;float: left}}
 @media screen and (min-width: 768px){#especificacoes td {width: 10vw; margin:0;}}
 @media screen and (max-width: 767px){#titulo-prod{margin-top: 70px;}}
-#especificacoes table { border: solid 1px;}
+@media screen and (min-width: 768px){#titulo-prod{width: 100%; margin:30px 0 30px 0; float: left;}}
 @media screen and (min-width: 768px){#marco-hdf{width: 500px; height: 350px; float: right;margin-right: 100px;}}
 @media screen and (max-width: 767px){#marco-hdf{width: 100%; height: 10%; float: right;}}
 .img-zoom-cabo{width: 50vw;height: 300px;}
-@media screen and (max-width: 767px){.img-zoom-cabo{width: 100%;height: 100%;}}
+@media screen and (max-width: 767px){.img-zoom-cabo{width: 100%;height: 100px;}}
 /*Empresa*/
 #logo-empresa{width: 30vw;height: 30vw; float: right;}
 @media screen and (max-width: 767px){#logo-empresa{width: 0;height: 0; float: right;}}
@@ -131,10 +137,11 @@ h1{width: 100%; margin:30px 0 30px 0; float: left;}
 @media screen and (max-width: 767px){#localizacao{width: 100%;height:100%; float:left; font-size: 25px;margin-top: 30px;}}
 @media screen and (max-width: 767px){#maps-google{width: 100%; margin-top: 80px;}}
 /*Representantes*/
-.mapa{width: 32.7vw; height: 39.6vw; float: left;}
+.mapa{width: 471px; height: 570px; float: left;}
 @media screen and (max-width: 767px){.mapa{width: 0; height:0; float: left; margin-top: 80px;}}
 #representante_atual{width: 20vw;height: 10vw; border: solid 1px;font-size: 20px;float: left;}
 @media screen and (max-width: 767px){#representante_atual{width: 0;height: 0; border: solid 1px;float: left;font-size: 20px;}}
 #repre{width: 280px;height: 14vw; border: solid 1px;font-size: 20px;float: left;}
 @media screen and (max-width: 767px){#repre{width: 280px;height: 100%; border: solid 1px;font-size: 20px;float: left;}}
+@media screen and (min-width: 768px){#titulo-representantes{width: 100%;margin-top: 80px; float: left;}}
 @media screen and (max-width: 767px){#titulo-representantes{margin-top: 80px;}}
