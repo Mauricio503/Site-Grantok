@@ -1,6 +1,6 @@
 *{margin: 0;padding: 0;border:none; outline:none;list-style-type:none;}
 body{margin: 0 auto;}
-#geral{width: 100%;}
+#geral{width:100%;}
 #telefone{margin:10px 0 15px 0;float: right;}
 /*Menu*/
 .menu{background: #096735;width: 100%;height: 100%;margin: 10px auto;float: left;}}
@@ -11,7 +11,7 @@ body{margin: 0 auto;}
 text-shadow: black 0px 2px, black 2px 0px, black -2px 0px, 
 black 0px -2px, black -1.4px -1.4px, black 1.4px 1.4px, 
 black 1.4px -1.4px, black -1.4px 1.4px;}
-.menu li:nth-child(3){margin-right: 9vw;}
+.menu li:nth-child(3){margin-right: 9vw;margin-left: 0;}
 .menu li:nth-child(6) a{margin-right: 0;}
 .menu li:nth-child(1n+4) a{text-align: right;margin-left: 2vw;}
 .menu li:nth-child(1){margin-left: 4vw;}
@@ -44,8 +44,10 @@ input#control-nav:checked ~ nav,
 input#control-nav:checked ~ .control-nav-close {-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);transform: translate(0, 0);}
 .modal-content {padding: 10px 5%;min-width: 88%;}}
 @media screen and (max-width: 480px) {header h1 {font-size: 20px;line-height: 40px;}}
-@media screen and (min-width: 768px) {.logo amp-img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;left: 43.5%;}}
-@media screen and (max-width: 767px) {.logo amp-img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;left: 14%;}}
+@media screen and (min-width: 768px) {.logo amp-img{width: 180px;height: 100px; background-size: 100px 64px;position: absolute;margin-top: 26px;left: 43.5%;}}
+@media screen and (max-width: 767px) {.logo amp-img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;left: 15%;}}
+@media screen and (min-width: 768px) {.logo-repre img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;left: 43.5%;}}
+@media screen and (max-width: 767px) {.logo-repre img{width: 180px;height: 100px;background-size: 100px 64px;position: absolute;margin-top: 26px;left: 14%;}}
 .site{text-align: center;}
 @media screen and (min-width: 768px){.scrollToTop{position:fixed;background: grey;top:90%;right:40px;display:none;border-radius: 100px;height: 35px;z-index: 1;}}
 @media screen and (max-width: 767px){.scrollToTop{position:fixed;background: grey;top:94%;display:none;right: 0;}}
@@ -53,14 +55,14 @@ input#control-nav:checked ~ .control-nav-close {-webkit-transform: translate(0, 
 border-right: 10px solid transparent;border-bottom: 10px solid black;}
 /*Slide*/
 .example-desc {margin:3px 0;padding:5px;}
-@media screen and (min-width: 768px) {#carousel {width: 80vw;height:30vw;position:all;
+@media screen and (min-width: 768px) {#carousel {width: 80vw;height:25vw;position:all;
 	clear:both;overflow:hidden;background:#FFF;z-index: 0;}}
 @media screen and (max-width: 767px) {#carousel{width: 80vw;height:70vw;position:absolute;clear:both;overflow:hidden;background:#FFF;z-index: 0;margin-top: 60px;}}
 @media screen and (min-width: 768px) {#carousel img{visibility:hidden;cursor:pointer;}}
-@media screen and (min-width: 768px) {#item-1,#item-2,#item-7,#item-8{width: 30vw;height: 30vw;}}
-@media screen and (min-width: 768px) {#item-3{width: 33vw;height: 30vw;}}
-@media screen and (min-width: 768px) {#item-4,#item-6{width: 28vw;height: 30vw;}}
-@media screen and (min-width: 768px) {#item-5{width: 31vw;height: 30vw;}}
+@media screen and (min-width: 768px) {#item-1,#item-2,#item-7,#item-8{width: 25vw;height: 25vw;}}
+@media screen and (min-width: 768px) {#item-3{width: 27vw;height: 25vw;}}
+@media screen and (min-width: 768px) {#item-4,#item-6{width: 25vw;height: 25vw;}}
+@media screen and (min-width: 768px) {#item-5{width: 26vw;height: 25vw;}}
 @media screen and (max-width: 767px) {#carousel img{width: 70vw;height: 70vw;visibility:hidden;cursor:pointer;}}
 #callback-output {height:250px;overflow:scroll;}
 textarea#newoptions {width:430px;}
@@ -72,7 +74,7 @@ textarea#newoptions {width:430px;}
 #all {width: 1280px; overflow: hidden;}
 /* Produtos pagina incial*/
 section{width: 100%;height: 100%;}
-@media screen and (min-width: 768px){#titulo-produtos{width: 100%;text-align: center;font-size: 50px;background:#096735;color:white;}}
+@media screen and (min-width: 768px){#titulo-produtos{width: 100%;text-align: center;font-size: 40px;background:#096735;color:white;}}
 @media screen and (max-width: 767px){#titulo-produtos{width: 100%;text-align: center;font-size: 30px;background:#096735;color:white;}}
 @media screen and (min-width: 768px){#img{width: 10vw;height: 7vw;float: left;border: solid 1px white;}}
 @media screen and (max-width: 767px){#img{width: 15vw;height: 10vw;border: solid 1px white;}}
@@ -80,11 +82,12 @@ section{width: 100%;height: 100%;}
 @media screen and (max-width: 767px){#img2{width: 15vw;height: 10vw;float: right;border: solid 1px white;}}
 @media screen and (min-width: 768px){#img3{width: 10vw;height: 7vw;margin-left: 10px;float: left;}}
 @media screen and (max-width: 767px){#img3{width: 17vw;height: 10vw;float: left;margin-left: 3px;}}
-@media screen and (min-width: 768px){#imagem-principal{width: 55vw;height: 60vw;}}
+@media screen and (min-width: 768px){#imagem-principal{width: 40vw;height: 40vw;}}
 @media screen and (max-width: 767px){#imagem-principal{width: 60vw;height: 75vw;}}
-#imagem-principal-cabos {width: 100%;height: 35vw;}
+#imagem-principal-cabos {width: 100%;height: 25vw;}
 #botoes-direita{width: 295px;}
 #botoes-esquerda{width: 322px;}
+#portas-pagina-inicial{margin: 0 auto;}
 /*Footer*/
 #footer{width: 100%;height: 100%;background: #096735;margin-top: 10px; float: left;}
 #footer h2{font-size: 40px;}
@@ -107,7 +110,7 @@ color: black;}}
 @media screen and (max-width: 767px){.sub-menu li a{width: 100px;height: 30px;display: block;padding: 10px 0;font-size: 15px;text-decoration: none;margin: 10px 10px 0 0;
 color: black;float: left;}}
 .submenu-todos{border-bottom: solid 5px #096735;}
-@media screen and (min-width: 768px){#prod{width: 16vw;height: 20vw;float: left;}}
+@media screen and (min-width: 768px){#prod{width: 16vw;height: 20vw;float: left;margin-top: 25px;}}
 @media screen and (max-width: 767px){#prod{width: 100%;height: 400px;float: left;margin-bottom: 50px;}}
 @media screen and (min-width: 768px){#prod amp-img{width: 16vw; height: 15vw;margin-top: 5px;}}
 @media screen and (max-width: 767px){#prod amp-img{width: 100%; height: 400px;margin-top: 5px;}}
@@ -130,7 +133,7 @@ color: black;float: left;}}
 /*Empresa*/
 #logo-empresa{width: 30vw;height: 30vw; float: right;}
 @media screen and (max-width: 767px){#logo-empresa{width: 0;height: 0; float: right;}}
-#texto-empresa{width: 60vw;height:100%;float: left; font-size: 25px; margin: 30px;}
+@media screen and (min-width: 768px){#texto-empresa{width: 60vw;height:100%;float: left; font-size: 25px; margin: 30px;}}
 @media screen and (max-width: 767px){#texto-empresa{width: 91%;height:100%;float: left; font-size: 25px; margin-top: 80px;}}
 /*Localização*/
 #localizacao{width: 50vw;height:30vw; float:left; font-size: 25px;margin-top: 30px;}

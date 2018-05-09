@@ -37,7 +37,7 @@ $(document).ready(function () {
             comboboxsilvio.toggle();
         });
 
-        var cidadesadriano = ["Abdon Batista","Alto Bela Vista","Anita Garibaldi","Arabutã","Aratiba","Aurea","Barão de Cotegipe","Campo Belo do Sul","Capinzal",
+        var cidadesadriano = ["Alto Bela Vista","Anita Garibaldi","Arabutã","Aratiba","Aurea","Barão de Cotegipe","Campo Belo do Sul","Capinzal",
         "Celso Ramos","Centenário","Concordia","Erechim","Erval Velho","Estação","Floriano Peixoto","Gaurama","Getúlio Vargas","Herval do Oeste","Ipira",
         "Ipumirim","Itá","Joaçaba","Lacerdópolis","Lindóia do Sul","Luzerna","Marcelino Ramos","Mariano Moro","Ouro","Paial","Passo Fundo","Peritiba","Piratuba",
         "Presidente Castelo Branco","São José do Cerrito","Seara","Severiano de Almeida","Tapejara","Três Arroio","Xavantina"];
